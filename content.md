@@ -2,9 +2,9 @@
 
 <div class="talk-title">
   <h1>A-Frame</h1>
-  <p>A web framework for building VR experiences</p>
+  <p>Creating your own Pokemon-world in Web based Virtual Reality</p>
   <p class="talk-info">
-    @you | company | **aframe.io**
+    @isantoshv | Mozilla Tech Speaker | **viswanathamsantosh.github.io**
   </p>
 </div>
 
@@ -167,47 +167,6 @@ Not just a specification, it's implemented...
 - Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
 - With all the browsers behind it...
 
----
-
-## Metaverse
-
-<!-- .slide: data-background="media/img/metaverse.png" -->
-
-<!-- NOTES -->
-- Shared persistent collective virtual spaces
-- Alternate digital reality that the world may live, work, play
-- Must be decentralized/open/connected, the Web is best platform to fully realize
-- Where do we begin?
-- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
-
----
-
-Too hard to create WebVR experiences...
-
----
-
-<!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" -->
-
-<div class="slide__boilerplate">
-  <p>Import WebVR polyfill</p>
-  <p>Set up camera</p>
-  <p>Set up lights</p>
-  <p>Initialize scene</p>
-  <p>Declare and pass canvas</p>
-  <p>Listen to window resize</p>
-  <p>Install VREffect</p>
-  <p>Instantiate renderer</p>
-  <p>Create render loop</p>
-  <p>Preload assets</p>
-  <p>Figure out responsiveness</p>
-  <p>Deal with metatags and mobile</p>
-</div>
-
-<!-- NOTES -->
-- It's still too difficult to create WebVR experiences
-- Huge obstacle if doing small prototypes and experiments
-- Boilerplate needs updating with new versions of WebVR, three.js, and browser quirks
-- Encapsulate all of that into one line...
 
 ------
 
@@ -444,44 +403,6 @@ A declarative framework for building virtual reality experiences on the Web
 <!-- .element: class="stretch" -->
 
 ---
-
-## Writing a Component
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```js
-AFRAME.registerComponent('my-component', {
-  schema: {
-    foo: {type: 'selector'},
-    bar: {default: 256}
-  },
-
-  init: function () { // ... },
-  update: function () { // ... },
-  remove: function () { // ... },
-  tick: function () { // ... }
-});
-```
-<!-- .element: class="stretch" -->
-
-```html
-<a-box my-component="foo: #box; bar: 300""></a-box>
-```
-
-<!-- NOTES -->
-- `schema`: defines how data is parsed from HTML
-- Lifecycle methods:
-  - `init`: component attached, like `componentDidMount`
-  - `update`: component data update, like `componentWillReceiveProps`
-  - `remove`: component detached, like `componentWillUnmount`
-  - `tick`: run on every frame
-- Properties:
-  - `el`: reference to entity element
-  - `data`: component data parsed from HTML
-  - `object3D`: three.js object
-
----
-
 <!-- .slide: data-background="media/img/standard-components.png" data-background-size="contain" -->
 
 <!-- NOTES -->
@@ -520,16 +441,6 @@ Curated collection of A-Frame components/shaders.
 - Collecting them into the A-Frame registry
 - Like a store of components that we make sure work well
 - People can browse and search for components or install them....
-
----
-
-## Inspector
-
-<!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
-
-Visual tool for A-Frame. Just `<ctrl>+<alt>+i`.
-
-<div class="stretch" data-aframe-scene="scenes/80s.html"></div>
 
 ------
 
