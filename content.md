@@ -442,6 +442,16 @@ Curated collection of A-Frame components/shaders.
 - Like a store of components that we make sure work well
 - People can browse and search for components or install them....
 
+---
+<h2>Building your pokemon world</h2>
+---
+## What do you need?
+
+
+<p>A background image(basically 360deg image)</p>
+<p>Few images or gif's of pokemon</p>
+<p>Few a-tags</p>
+
 ------
 
 <!-- .slide: data-background-video="media/video/a-painter.mp4" data-background-video-muted="true" data-state="state--bg-dark" -->
